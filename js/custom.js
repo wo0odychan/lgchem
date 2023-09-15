@@ -114,4 +114,23 @@ $(function () {
         $('html, body').animate({ scrollTop: 0 }, 1000)
     });
 
+
+    /* GET ALL VIDEOS */
+    var sliderVideos = $(".swiper-slide video");
+
+    /* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+    mainSlide.on('slideChange', function () {
+        /* 다음 슬라이드로 갈 시 비디오 재생을 멈추고 시간 처음으로 */
+        sliderVideos.each(function (index) {
+            this.pause();
+            this.currentTime = 0;
+        });
+
+        /* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+        var prevVideo = $("[data-swiper-slide-index=" + this.previousIndex + "]").find("video");
+        var currentVideo = $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+        prevVideo.trigger('stop');
+        currentVideo.trigger('play');
+
+    });
 })
