@@ -20,7 +20,10 @@
     <div class="wrap">
         <header class="header">
             <div class="header_wrap h_inner">
-                <h1><a href=""><img src="./images/logo_white.png" alt=""></a></h1>
+                <h1>
+                    <a href=""><img src="./images/logo_white.png" alt="" class="wh"></a>
+                    <a href=""><img src="./images/logo_basic.png" alt="" class="bs"></a>
+                </h1>
                 <nav class="gnb">
                     <ul class="main_menu">
                         <li><a href="">COMPANY</a>
@@ -102,14 +105,14 @@
                         <div class="swiper-slide itm01 itm">
                             <div class="content">
                                 <div class="img_box">
-                                    <video playsinline muted data-keepplaying>
+                                    <video playsinline muted autoplay="true">
                                         <source src="./images/mainV01.mp4">
                                     </video>
                                 </div>
                                 <div class="slogan inner gls">
                                     <strong>Towards Top
-                                        Global Science Company </strong>
-                                    <p>더 나은 미래를 위해 과학을 인류의 삶에 연결합니다. </p>
+                                        Global Science Company</strong>
+                                    <p>더 나은 미래를 위해 과학을 인류의 삶에 연결합니다.</p>
                                     <div class="more">
                                         <a href="">MORE</a>
                                     </div>
@@ -120,14 +123,13 @@
 
                             <div class="content">
                                 <div class="img_box">
-                                    <video playsinline muted data-keepplaying>
+                                    <video playsinline muted autoplay="true">
                                         <source src="./images/mainV02.mp4">
                                     </video>
                                 </div>
                                 <div class="slogan inner gls">
-                                    <strong>Towards Top
-                                        Global Science Company </strong>
-                                    <p>더 나은 미래를 위해 과학을 인류의 삶에 연결합니다. </p>
+                                    <strong>Sustainablity</strong>
+                                    <p>Sustainablity는 LG화학이 미래로 나아가는 동력이자<br /> 우리의 지향점입니다.</p>
                                     <div class="more">
                                         <a href="">MORE</a>
                                     </div>
@@ -138,14 +140,13 @@
 
                             <div class="content">
                                 <div class="img_box">
-                                    <video playsinline muted data-keepplaying>
+                                    <video playsinline muted autoplay="true">
                                         <source src="./images/mainV03.mp4">
                                     </video>
                                 </div>
                                 <div class="slogan inner gls">
-                                    <strong>Towards Top
-                                        Global Science Company </strong>
-                                    <p>더 나은 미래를 위해 과학을 인류의 삶에 연결합니다. </p>
+                                    <strong>Green Connector</strong>
+                                    <p>LG화학은 사회공헌활동과 환경 가치(Green) 연결(Connect)하여 인류의 삶과 사회 전반에 환경 가치를 제공합니다.</p>
                                     <div class="more">
                                         <a href="">MORE</a>
                                     </div>
@@ -156,14 +157,13 @@
 
                             <div class="content">
                                 <div class="img_box">
-                                    <video playsinline muted data-keepplaying>
+                                    <video playsinline muted autoplay="true">
                                         <source src="./images/mainV04.mp4">
                                     </video>
                                 </div>
                                 <div class="slogan inner gls">
-                                    <strong>Towards Top
-                                        Global Science Company </strong>
-                                    <p>더 나은 미래를 위해 과학을 인류의 삶에 연결합니다. </p>
+                                    <strong>LET Zero </strong>
+                                    <p>LG화학의 친환경 소재 브랜드 LETZero로 보다 건강한 미래를 만들어 나가겠습니다.</p>
                                     <div class="more">
                                         <a href="">MORE</a>
                                     </div>
@@ -562,10 +562,13 @@
                     </div>
                     <div class="word">
                         <strong>추천 키워드</strong>
-                        <span><a href="">제품 구매</a></span>
-                        <span><a href="">실적</a></span>
-                        <span><a href="">친환경 제품</a></span>
-                        <span><a href="">감사보고서</a></span>
+                        <div class="key">
+                            <span><a href="">제품 구매</a></span>
+                            <span><a href="">실적</a></span>
+                            <span><a href="">친환경 제품</a></span>
+                            <span><a href="">감사보고서</a></span>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -578,11 +581,13 @@
                         <li class="bold"><a href="">개인정보 처리방침</a></li>
                         <li><a href="">이메일무단수집거부</a></li>
                         <li><a href="">정도경영 사이버 신문고</a></li>
-                        <li><a href="">협력회사 상생고</a></li>
+                        <li class="center"><a href="">협력회사 상생고</a></li>
                         <li><a href="">쿠키 설정</a></li>
-                        <li class="btn"><a href="">개인정보 처리방침</a></li>
-                        <li class="btn"><a href=""><i class="xi-headset"></i>1:1 문의</a></li>
-                        <li class="btn_b"><a href=""><i class="xi-paper-o"></i></a></li>
+                        <div class="btns">
+                            <li class="btn"><a href="">개인정보 처리방침</a></li>
+                            <li class="btn c"><a href=""><i class="xi-headset"></i>1:1 문의</a></li>
+                            <li class="btn_b"><a href=""><i class="xi-paper-o"></i></a></li>
+                        </div>
                     </ul>
                     <div class="fml">
                         <div class="btn_l">
@@ -643,6 +648,10 @@
                 </div>
             </div>
         </footer>
+
+        <div class="to_top">
+            <i class="xi-angle-up"></i>
+        </div>
 
     </div>
 </body>
