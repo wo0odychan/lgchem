@@ -1130,6 +1130,11 @@ footer .top .content .fml .btn_l .fml_inner .box::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:768px) {
+
+    * {
+        outline: 1px solid #00dc2f;
+    }
+
     .header {
         background: #fff;
         border-bottom: 1px solid var(--lc);
@@ -1459,8 +1464,10 @@ footer .top .content .fml .btn_l .fml_inner .box::-webkit-scrollbar-thumb {
 
 
     .main_news .news_box .itm {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
+
 
     .main_search .content .tit h2 {
         font-size: 36px;
