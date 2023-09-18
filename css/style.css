@@ -1131,10 +1131,6 @@ footer .top .content .fml .btn_l .fml_inner .box::-webkit-scrollbar-thumb {
 
 @media (max-width:768px) {
 
-    * {
-        outline: 1px solid #00dc2f;
-    }
-
     .header {
         background: #fff;
         border-bottom: 1px solid var(--lc);
